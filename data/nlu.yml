@@ -64,6 +64,10 @@ nlu:
     - guten abend
     - hi, kannst du mir helfen
     - guten tag mister
+    - Guten Tag zusammen
+    - guten tag der herr
+    - Guten tag zusammen
+    - guten tag zusammen
 - intent: goodbye
   examples: |
     - cu
@@ -589,6 +593,10 @@ nlu:
     - [sonder]{"entity": "brick_type", "value": "sonderziegel"} bitte
     - [ton250](brick_type) wären perfekt für mein anliegen
     - für [glasmodule](framed)
+    - [Glas](framed) Bitte
+    - ich möchte die [ultra-leichten]{"entity": "rail_bfeature", "value": "ultraleicht"}
+    - [ton260](brick_type) wären top
+    - [beton ziegel]{"entity": "brick_type", "value": "beton"}
 - intent: want_article
   examples: |
     - ich brauche [endklemmen]{"entity": "clamp_type", "value": "endklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [40 mm](height)
@@ -1609,6 +1617,10 @@ nlu:
     - ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} bestellen
     - ich möchte noch [endklemmen]{"entity": "clamp_type", "value": "endklemme"} dazu auch für [glasmodule](framed)
     - ich möchte [dachhaken](article) dazu noch
+    - [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"} Bitte schön
+    - Ich möchte war sie Clip [Klemmen]{"entity": "article", "value": "klemme"} bestellen
+    - ich brauche [schienen]{"entity": "article", "value": "schiene"} bitte
+    - ich brauche [sonderziegel](brick_type) bitte
 - intent: give_sales_unit
   examples: |
     - [15](sales_units) Verkaufseinheiten
@@ -2059,6 +2071,10 @@ nlu:
     - [fünfzehn](sales_units) stück bitte sehr
     - [zwei](sales_units) reichen aus fra
     - [vier](sales_units) stück reichen alle mal
+    - Mir reichen glaube ich [43](sales_units) aus für dieses Vorhaben
+    - [44](height) bitte
+    - [vier](sales_units) stück bitte
+    - [drei](sales_units) reiche mir
 - intent: give_height
   examples: |
     - [6 mm](height) hohe [Endklemmen]{"entity": "clamp_type", "value": "endklemme"}
@@ -2131,6 +2147,7 @@ nlu:
     - [35 mm](height) bitte
     - [35 mm](height) bitte sehr
     - [39 mm](height) hoehe
+    - [wasiclip]{"entity": "framed", "value": "WASICLIP"} [44mm](height)
 - intent: thanks
   examples: |
     - Vielen Dank!
@@ -2326,6 +2343,7 @@ nlu:
     - generiere das pdf für die rechnung
     - erstelle das pdf bitte
     - erstelle die Rechnung in pdf format bitte
+    - Tag zusammen
 - intent: give_clamp_id
   examples: |
     - [9742-WASI4-30](w_clamp_id)
@@ -2427,6 +2445,9 @@ nlu:
     - lies mir die positionen des angebotes vor bitte
     - lies mir meine aktuelle liste vor
     - lies mir meine derzeitige liste vor
+    - ich möchte meine liste vorgelesen
+    - lies mir meine Liste vor bitte
+    - lise mir meine liste vor bitte
 - intent: define_bauvorhaben
   examples: |
     - Diesmal ist eine andere Baustelle
