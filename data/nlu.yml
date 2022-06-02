@@ -123,7 +123,6 @@ nlu:
     - Wir sehen uns!
     - Wir sehen uns das naechste mal
     - Auf Wiedersehen!
-    - Auf Wiedersehen!
     - vielen Dank! Auf Wiedersehen!
     - auf wiedersehen, bis zum naechsten mal
     - genau, bis bald!
@@ -2166,29 +2165,24 @@ nlu:
     - das war es danke
     - danke sehr
     - perfekt, danke dir!
-    - danke 
-    - danke dir 
-    - danke Ihnen 
-    - danke schön 
-    - danke schoen 
-    - danke sehr 
-    - danke vielmals 
-    - ich habe zu danken 
-    - vielen dank 
-    - vielen Dank
-    - vielen lieben dank 
-    - vielen vielen dank 
-    - wir haben zu danken 
-    - besten Dank 
+    - danke dir
+    - danke Ihnen
+    - danke schön
+    - danke schoen
+    - danke vielmals
+    - ich habe zu danken
+    - vielen vielen dank
+    - wir haben zu danken
+    - besten Dank
     - firma dankt
-    - gott vergelt s 
+    - gott vergelt s
     - Gott vergelt es
-    - dank 
+    - dank
     - herzlichen dank
     - lieben Dank
     - man dankt
-    - merci 
-    - verbindlichsten dank 
+    - merci
+    - verbindlichsten dank
     - vergelt s gott
 - intent: stop
   examples: |
