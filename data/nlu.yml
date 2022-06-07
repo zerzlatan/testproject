@@ -2804,9 +2804,9 @@ nlu:
 - synonym: beton
   examples: |
     - betonziegel
+    - beton ziegel
     - ziegel beton
     - beton-ziegel
-    - beton ziegel
     - ziegel-beton
     - Beton
 - synonym: blechziegel

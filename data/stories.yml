@@ -13087,3 +13087,11 @@ stories:
   - action: action_delete_latest_position
   - intent: delete_latest_position
   - action: action_delete_latest_position
+- story: Story from Conversation ID a0d2b8153e7a41a898c44877a25259ad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: read_current_positions
+  - action: action_read_current_positions
+  - intent: generate_final_task
+  - action: action_generate_final_task
