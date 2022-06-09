@@ -3114,6 +3114,9 @@ nlu:
     - Die Achte
     - Achte
     - Nummer Acht
+- regex: stt_height
+  examples: |
+    - \b([1-9][0-9]{1})mm
 - regex: w_clamp_id
   examples: |
     - ([0-9]{4})-([A-Z]{2})(.{3,13})
