@@ -68,6 +68,16 @@ nlu:
     - guten tag der herr
     - Guten tag zusammen
     - guten tag zusammen
+    - guten abend miteinander
+    - guten Tag
+    - hey hey
+    - guten abend darling
+    - Hey bitte
+    - guten abend zusammen
+    - guten Tag zusammen
+    - Guten Tag zusammen Hallo
+    - Hallo
+    - Tag
 - intent: goodbye
   examples: |
     - cu
@@ -212,6 +222,8 @@ nlu:
     - ja bitte
     - ja, bitte sehr
     - ja bitte abbrechen
+    - ja stop
+    - ja ich bin mir sicher
 - intent: deny
   examples: |
     - no
@@ -249,6 +261,8 @@ nlu:
     - nein doch [ton250](brick_type)
     - ne das auch net bitte sehr
     - ne das ist nicht relevant für das vorhaben
+    - Nein ich möchte etwas bestellen Bitte
+    - Gar nicht hier
 - intent: request_tutorial_simple
   examples: |
     - Best Practices
@@ -597,6 +611,28 @@ nlu:
     - ich möchte die [ultra-leichten]{"entity": "rail_bfeature", "value": "ultraleicht"}
     - [ton260](brick_type) wären top
     - [beton ziegel]{"entity": "brick_type", "value": "beton"}
+    - für [gewagte](framed) Module
+    - [endklemmen]{"entity": "clamp_type", "value": "endklemme"}
+    - für ein [trapezdach](rail_bfeature)
+    - mit [Wasi Clip]{"entity": "framed", "value": "WASICLIP"}
+    - mit [was i Clip](framed)
+    - in [heller](rail_color)
+    - für [gerade](framed) die Module
+    - dieses Mal für [gerahmte]{"entity": "framed", "value": "gerahmt"} Module bitte
+    - in [hell]{"entity": "rail_color", "value": "weissaluminium"} bitte
+    - [Millimeter]{"entity": "framed", "value": "mm"} [36mm](height)
+    - [Beton]{"entity": "brick_type", "value": "beton"} bitte
+    - [Sonderziegel]{"entity": "brick_type", "value": "sonderziegel"}
+    - Für [gerahmte]{"entity": "framed", "value": "gerahmt"} Module Bitte
+    - Für [gerahmte]{"entity": "framed", "value": "gerahmt"} Module in [36 Millimeter](height)
+    - [gerahmte]{"entity": "framed", "value": "gerahmt"} module bitte sehr
+    - Für [Glas](framed) bitte
+    - Mit [zeitlicher Nutung](rail_bfeature) [vierziger Montageschiene](rail_adesign)
+    - [Zweihundertfünfzig-tonziegel]{"entity": "brick_type", "value": "ton250"}
+    - Mit [War sie Clip](w_clamp_id) Bitte
+    - [Weiße](rail_color) Farbe
+    - Mit [WASI Clip]{"entity": "framed", "value": "WASICLIP"}
+    - [Glas](framed) ist ausreichend
 - intent: want_article
   examples: |
     - ich brauche [endklemmen]{"entity": "clamp_type", "value": "endklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [40 mm](height)
@@ -1621,6 +1657,54 @@ nlu:
     - Ich möchte war sie Clip [Klemmen]{"entity": "article", "value": "klemme"} bestellen
     - ich brauche [schienen]{"entity": "article", "value": "schiene"} bitte
     - ich brauche [sonderziegel](brick_type) bitte
+    - bestellen [endklemmen]{"entity": "clamp_type", "value": "endklemme"}
+    - ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} bestellen bitte
+    - ich brauche einen [klemmen]{"entity": "article", "value": "klemme"}
+    - ich brauche [Dachhaken]{"entity": "article", "value": "dachhaken"} unbedingt
+    - ich hätte noch gerne mehr von den [blechziegel](article)
+    - ich würde gerne [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} bestellen
+    - mit ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} bestellen
+    - ich möchte [mittelklein](clamp_type) bestellen
+    - bestellen ich würde gerne etwas bestellen und zwar [blechziegel](article)
+    - ich möchte [endklemmen]{"entity": "clamp_type", "value": "endklemme"}
+    - ich möchte [endklemmen]{"entity": "clamp_type", "value": "endklemme"} erwerben
+    - ich möchte [endklemmen]{"entity": "clamp_type", "value": "endklemme"} kaufen
+    - ich möchte [endklemmen]{"entity": "clamp_type", "value": "endklemme"} erwerben bitte
+    - ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} erwerben bitte
+    - ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"}
+    - Dach ich möchte [Dachhaken]{"entity": "article", "value": "dachhaken"} erwerben
+    - Guten Tag ich hätte gerne [Endklemmen]{"entity": "clamp_type", "value": "endklemme"} mit [Wasiclip]{"entity": "framed", "value": "WASICLIP"}
+    - [mittelklemme](clamp_type) bitte
+    - ich möchte [breite]{"entity": "rail_adesign", "value": "80er Montageschienen"} [Montageschienen]{"entity": "article", "value": "schiene"}
+    - in [schwarz](rail_color)
+    - ich möchte [endklemmen]{"entity": "clamp_type", "value": "endklemme"} bestellen bitte
+    - ich möchte noch Metall [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"}
+    - ich möchte [blechziegel](article) bestellen bitte
+    - Ich möchte [Blechziegel]{"entity": "article", "value": "blechziegel"} bestellen
+    - Ich würde gerne etwas bestellen
+    - Ich hätte gerne mehr von den [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"}
+    - In [Hell]{"entity": "rail_color", "value": "weissaluminium"} bitte also hell [Weiss]{"entity": "rail_color", "value": "weissaluminium"}
+    - Ich brauche [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"} Bitte
+    - Ich brauche [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"}
+    - ich brauche [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} für [gerahmte]{"entity": "framed", "value": "gerahmt"} module bitte
+    - ich brauche [50](sales_units) [solarmodule]{"entity": "article", "value": "photovoltaikmodul"}
+    - ich brauche [Solarmodule]{"entity": "article", "value": "photovoltaikmodul"}
+    - Ich möchte noch [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"}
+    - Eine [seitliche Nutung](rail_bfeature) wäre optimal also [seitlich](brick_type) benotet
+    - Ich hätte gern [erschienen](article) mit [zeitlicher Nutung](rail_bfeature) Bitte
+    - Ich möchte noch [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"} für [Glas](framed) Module
+    - Ich möchte es [Blechziegel]{"entity": "article", "value": "blechziegel"} bestellen Bitte
+    - Ich möchte [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"} für [Glas](framed) Module
+    - Ich möchte [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"} für [Glas](framed) Module kaufen
+    - [Endklemme]{"entity": "clamp_type", "value": "endklemme"} für [gerahmte]{"entity": "framed", "value": "gerahmt"} Module Beton
+    - Ich möchte [Endklemme]{"entity": "clamp_type", "value": "endklemme"} [quasi Clip](framed) kaufen
+    - Ich möchte [Endklemme]{"entity": "clamp_type", "value": "endklemme"} kaufen
+    - Ich möchte [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"} kaufen
+    - Ich möchte [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"} bestellen
+    - Ja ich hätte gerne [Mittelklemme]{"entity": "clamp_type", "value": "mittelklemme"}
+    - Ich brauche [Sonderziegel]{"entity": "brick_type", "value": "sonderziegel"}
+    - Guten Tag Ich hätte gern hoffen und [Blechziegel]{"entity": "article", "value": "blechziegel"} bitte
+    - Servus Jetzt wird [Blechziegel](w_clamp_id)
 - intent: give_sales_unit
   examples: |
     - [15](sales_units) Verkaufseinheiten
@@ -2075,6 +2159,23 @@ nlu:
     - [44](height) bitte
     - [vier](sales_units) stück bitte
     - [drei](sales_units) reiche mir
+    - [36](sales_units)
+    - [7](sales_units) Stück reichen mir aus
+    - [7](sales_units) Stück
+    - [45](sales_units) Stück Bitte
+    - [13](sales_units) stück bitte
+    - [15](sales_units) Stück reichen aus
+    - [3](sales_units) stuecke
+    - [dreizehn](sales_units) stück reichen hier aus
+    - [Sieben](sales_units) reichen aus für mich
+    - [40](sales_units) Stück reichen
+    - [15](sales_units) Stück Butter
+    - [13](sales_units) Stück reichen mehr aus
+    - [33](sales_units) Stück Bitte
+    - [Drei](sales_units)
+    - [44](sales_units) Stück Bitte sehr
+    - [32](sales_units) Stück reichen aus
+    - [Sieben](sales_units)
 - intent: give_height
   examples: |
     - [6 mm](height) hohe [Endklemmen]{"entity": "clamp_type", "value": "endklemme"}
@@ -2148,6 +2249,12 @@ nlu:
     - [35 mm](height) bitte sehr
     - [39 mm](height) hoehe
     - [wasiclip]{"entity": "framed", "value": "WASICLIP"} [44mm](height)
+    - [38mm](height)
+    - [36 ml](height)
+    - [36mm](height)
+    - [35mm](height)
+    - [42 Millimeter](height)
+    - [32 Millimeter](height)
 - intent: thanks
   examples: |
     - Vielen Dank!
@@ -2201,6 +2308,10 @@ nlu:
     - merci
     - verbindlichsten dank
     - vergelt s gott
+    - das war's danke
+    - Danke Das war's Ich komme später wieder
+    - Das war s Danke schön
+    - Danke Das war's
 - intent: stop
   examples: |
     - Stop
@@ -2241,6 +2352,9 @@ nlu:
     - abbrechen
     - abbrechen bitte
     - halt das war falsch
+    - ich möchte den Vorgang abbrechen
+    - ich habe keinen Bock mehr
+    - Abbrechen Das möchte ich nicht
 - intent: generate_final_task
   examples: |
     - Erstelle das Angebot
@@ -2344,6 +2458,16 @@ nlu:
     - erstelle das pdf bitte
     - erstelle die Rechnung in pdf format bitte
     - Tag zusammen
+    - generiere meine pdf bitte sehr
+    - generiere die pdf zu meinem angebot bitte
+    - generiere meine PDF bitte
+    - generiere das pdf dazu bitte
+    - Generieren mein Rechnung PDF bitte
+    - Stellen Bitte meine Rechnung als pdf
+    - Meine Rechnung erstellen als PDF bitte
+    - Danke schön Ich möchte jetzt noch als Nächstes bitte dass du mir die Rechnung als pdf erstellt
+    - Er stelle die Rechnung in PDF Form für mich bitte
+    - Stelle meine PDF Bitte
 - intent: give_clamp_id
   examples: |
     - [9742-WASI4-30](w_clamp_id)
@@ -2448,6 +2572,8 @@ nlu:
     - ich möchte meine liste vorgelesen
     - lies mir meine Liste vor bitte
     - lise mir meine liste vor bitte
+    - Dies meine Liste vor Bitte
+    - Bis mir eine Liste vor
 - intent: define_bauvorhaben
   examples: |
     - Diesmal ist eine andere Baustelle
@@ -2566,6 +2692,7 @@ nlu:
     - metallenen
     - weissallumium
     - helle
+    - heller
 - synonym: seitliche Nutung
   examples: |
     - seitlicher Nutung
@@ -2575,6 +2702,7 @@ nlu:
     - Nuten seitlich
     - genuteten Schienen
     - seitlich genuteten
+    - zeitlicher Nutung
 - synonym: ultraleicht
   examples: |
     - ultraleichter
@@ -2667,6 +2795,7 @@ nlu:
     - mittel-klemme
     - mittel-klemmen
     - Mittel-klemmen
+    - mittelklein
 - synonym: schwarz
   examples: |
     - schwarze
@@ -2746,6 +2875,9 @@ nlu:
     - was clip
     - vas clip
     - vasi-clip
+    - was i Clip
+    - War sie Clip
+    - quasi Clip
 - synonym: ton260
   examples: |
     - ton-zweisechzig-ziegel
@@ -2801,6 +2933,8 @@ nlu:
     - gerahmteren
     - gerahmterem
     - geramt
+    - gewagte
+    - gerade
 - synonym: beton
   examples: |
     - betonziegel
