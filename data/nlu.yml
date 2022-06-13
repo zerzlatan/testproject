@@ -1737,6 +1737,7 @@ nlu:
     - ich brauche [PV-Module]{"entity": "article", "value": "photovoltaikmodul"}
     - ich möchte [was](clamp_type) bestellen
     - ich möchte [blechziegel](article) erstellen
+    - ich hätte gerne [M10](ascrew_type) [Adapter Bleche](article)
 - intent: give_sales_unit
   examples: |
     - [15](sales_units) Verkaufseinheiten
@@ -2616,6 +2617,7 @@ nlu:
     - Dies meine Liste vor Bitte
     - Bis mir eine Liste vor
     - lies mir meine Liste bitte vor
+    - Alicia neue Liste vor
 - intent: define_bauvorhaben
   examples: |
     - Diesmal ist eine andere Baustelle
@@ -3086,6 +3088,7 @@ nlu:
     - adapberbleche
     - adapter-blech
     - Adapter-blech
+    - Adapter Bleche
 - synonym: photovoltaikmodul
   examples: |
     - PV-Modul
