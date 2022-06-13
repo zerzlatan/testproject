@@ -800,13 +800,3 @@ rules:
   steps:
   - intent: delete_latest_position
   - action: action_delete_latest_position
-- rule: Activate simple_clamp_form whenever MK
-  condition:
-  - slot_was_set:
-    - clamp_type: Mittelklemme
-  steps:
-  - intent: want_article
-  - action: simple_clamp_form
-  - active_loop: simple_clamp_form
-  - slot_was_set:
-    - requested_slot: true
