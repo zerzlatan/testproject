@@ -3,7 +3,7 @@ rules:
 - rule: whenever Mittelklemme is defined start simple_clamp_loop
   condition:
   - slot_was_set:
-    - clamp_type: Mittelklemme
+    - clamp_type: mittelklemme
   steps:
   - action: simple_clamp_form
   - active_loop: simple_clamp_form
@@ -12,7 +12,7 @@ rules:
 - rule: whenever clamp_type is defined as Endklemme
   condition:
   - slot_was_set:
-    - clamp_type: Endklemme
+    - clamp_type: endklemme
   - active_loop: null
   steps:
   - action: simple_clamp_form
