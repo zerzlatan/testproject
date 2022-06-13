@@ -78,6 +78,9 @@ nlu:
     - Guten Tag zusammen Hallo
     - Hallo
     - Tag
+    - Guten Tag zusammen!
+    - Guten Abend zusammen
+    - servus
 - intent: goodbye
   examples: |
     - cu
@@ -224,6 +227,7 @@ nlu:
     - ja bitte abbrechen
     - ja stop
     - ja ich bin mir sicher
+    - ja ja
 - intent: deny
   examples: |
     - no
@@ -280,6 +284,7 @@ nlu:
     - wie funktioniert dieses tool?
     - wie [funktionierst](article) du? ich möchte eine Einführung bitte
     - Wie funktioniert diese App?
+    - Wie funktioniert diese App
 - intent: test_hello_world
   examples: |
     - Test
@@ -633,6 +638,15 @@ nlu:
     - [Weiße](rail_color) Farbe
     - Mit [WASI Clip]{"entity": "framed", "value": "WASICLIP"}
     - [Glas](framed) ist ausreichend
+    - [schwarz](rail_color) Mitte
+    - [36mm](height) bitte Hallo Michelle wo bist du
+    - mit [was i Clip]{"entity": "framed", "value": "WASICLIP"} bitte
+    - [30](sales_units) Stück bitte
+    - für [gesamte](framed) Module bitte
+    - dass ich mir den Bedarf und [30 mm](height)
+    - füge rannte Module bitte für [gerahmte]{"entity": "framed", "value": "gerahmt"} Module
+    - [30](sales_units) bitte
+    - [ton 250]{"entity": "brick_type", "value": "ton250"} bitte
 - intent: want_article
   examples: |
     - ich brauche [endklemmen]{"entity": "clamp_type", "value": "endklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [40 mm](height)
@@ -1705,6 +1719,24 @@ nlu:
     - Ich brauche [Sonderziegel]{"entity": "brick_type", "value": "sonderziegel"}
     - Guten Tag Ich hätte gern hoffen und [Blechziegel]{"entity": "article", "value": "blechziegel"} bitte
     - Servus Jetzt wird [Blechziegel](w_clamp_id)
+    - ich bräuchte [blechziegel](article)
+    - ich würde gerne [Ziege](article) bestelle
+    - Guten Tag ich brauche [Blechziegel]{"entity": "article", "value": "blechziegel"}
+    - [sonderziegel](brick_type) werden passend
+    - ich möchte [blechziegel](article) erwerben bitte
+    - ich möchte [endklemmen]{"entity": "clamp_type", "value": "endklemme"} bestellen bitte schön
+    - Ich möchte [Endklemmen]{"entity": "clamp_type", "value": "endklemme"} bestellen
+    - ich würde gerne bestellen
+    - ich möchte [Mittel]{"entity": "clamp_type", "value": "mittelklemme"} Clam bestellen bitte
+    - ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} erwerben
+    - ich brauche [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} bitteschön
+    - Ich möchte [Mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"}
+    - Guten Tag, ich würde gerne [blechziegel](article) bestellen
+    - [blechziegel](article) bestellen bitte
+    - ich brauche [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} mit [war sie Clip](framed)
+    - ich brauche [PV-Module]{"entity": "article", "value": "photovoltaikmodul"}
+    - ich möchte [was](clamp_type) bestellen
+    - ich möchte [blechziegel](article) erstellen
 - intent: give_sales_unit
   examples: |
     - [15](sales_units) Verkaufseinheiten
@@ -2176,6 +2208,10 @@ nlu:
     - [44](sales_units) Stück Bitte sehr
     - [32](sales_units) Stück reichen aus
     - [Sieben](sales_units)
+    - [40](sales_units) Stück
+    - [14](sales_units) Stück
+    - [33](sales_units) Stück sollten ausreichen
+    - [7](sales_units) Uhr
 - intent: give_height
   examples: |
     - [6 mm](height) hohe [Endklemmen]{"entity": "clamp_type", "value": "endklemme"}
@@ -2255,6 +2291,8 @@ nlu:
     - [35mm](height)
     - [42 Millimeter](height)
     - [32 Millimeter](height)
+    - [50 mm](height) wären ausreichend
+    - [36mm](height) Wetter
 - intent: thanks
   examples: |
     - Vielen Dank!
@@ -2312,6 +2350,7 @@ nlu:
     - Danke Das war's Ich komme später wieder
     - Das war s Danke schön
     - Danke Das war's
+    - danke das war's ein schönen Tag wünsche ich
 - intent: stop
   examples: |
     - Stop
@@ -2355,6 +2394,8 @@ nlu:
     - ich möchte den Vorgang abbrechen
     - ich habe keinen Bock mehr
     - Abbrechen Das möchte ich nicht
+    - Stopp Stopp Stopp
+    - Stopp Stopp
 - intent: generate_final_task
   examples: |
     - Erstelle das Angebot
@@ -2574,6 +2615,7 @@ nlu:
     - lise mir meine liste vor bitte
     - Dies meine Liste vor Bitte
     - Bis mir eine Liste vor
+    - lies mir meine Liste bitte vor
 - intent: define_bauvorhaben
   examples: |
     - Diesmal ist eine andere Baustelle
@@ -2882,6 +2924,7 @@ nlu:
     - was i Clip
     - War sie Clip
     - quasi Clip
+    - war sie Clip
 - synonym: ton260
   examples: |
     - ton-zweisechzig-ziegel
@@ -2939,6 +2982,7 @@ nlu:
     - geramt
     - gewagte
     - gerade
+    - gesamte
 - synonym: beton
   examples: |
     - betonziegel
@@ -3000,6 +3044,7 @@ nlu:
     - blechziegeln
     - dachziegel
     - dachziegeln
+    - Ziege
 - synonym: klemme
   examples: |
     - Klemmen
