@@ -292,7 +292,7 @@ responses:
   utter_ask_dcity:
   - text: Abschließend der Name der Stadt oder Stadtteil
   utter_tutorial_simple:
-  - text: Ich kann Sie im Angebotserstellprozess unterstützen. Sie können eine Liste befüllen, die als Grundlage für das erstellte Angebot dient. Äußere eine Artikelgruppe und wir determinieren den Artikel mit wenigen Fragen. Zum Abschluss der Position wird die Menge benötigt. Zur Erstellung des Angebots frage einfach nach der Rechnung. Viel Erfolg!
+  - text: Ich kann Sie im Angebotserstellprozess unterstützen. Sie können eine Liste befüllen, die als Grundlage für das geplante Angebot dient. Äußere eine Artikelgruppe und wir determinieren den Artikel durch wenige Fragen. Im letzten Schritt der Positionserstellung ist die Menge benötigt. Das Angebot wird in PDF-Format zur Verfügung gestellt, solltest du mich nach der Rechnung fragen. Viel Erfolg!
   utter_pv_slots:
   - text: Das Angebot wurde um {sales_units} PV-Module erweitert, kann ich sonst noch etwas hinzufuegen?
 actions:
