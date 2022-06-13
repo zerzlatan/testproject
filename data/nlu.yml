@@ -2687,6 +2687,8 @@ nlu:
     - metall
     - aluminiumfarben
     - metallener
+    - Hell
+    - Weiss
     - metallfarben
     - alufarber
     - metallenen
@@ -2868,6 +2870,8 @@ nlu:
     - wasi clip
     - Wasiclip
     - wasiclip
+    - Wasi Clip
+    - WASI Clip
     - wasi-clip
     - vase clip
     - wasie clip
@@ -2914,10 +2918,10 @@ nlu:
     - sonder-ziegel
     - sonder
     - sondere
+    - Sonderziegel
     - besondere-ziegel
     - besondere ziegel
     - ausserhalb des Sortiments
-    - Sonderziegel
     - ausserhalb des sortiments
     - sondere ausfuehrung
     - sonder ausfuehrung
@@ -2939,10 +2943,47 @@ nlu:
   examples: |
     - betonziegel
     - beton ziegel
+    - Beton
     - ziegel beton
     - beton-ziegel
     - ziegel-beton
-    - Beton
+- synonym: mm
+  examples: |
+    - Millimeter
+    - em em
+    - milli meter
+    - millimeter
+- synonym: ton250
+  examples: |
+    - Zweihundertfünfzig-tonziegel
+    - ton-zweifünfzig
+    - ton-zwei-fünfzig
+    - ton-zweihundertfünfzig
+    - ton-zweifünfzig-ziegel
+    - ton-zwei-fünfzig-ziegel
+    - ton-zweihundertfünfzig-ziegel
+    - zweifünfzig-ton-ziegel
+    - zwei-fünfzig-ton-ziegel
+    - zweihundertfünfzig-ton-ziegel
+    - zweifünfzig-tonziegel
+    - zwei-fünfzig-tonziegel
+    - zweihundertfünfzig-tonziegel
+    - ton zweifünfzig
+    - ton zwei fünfzig
+    - ton zweihundertfünfzig
+    - zweifünfzig ton
+    - zwei fünfzig ton
+    - zweihundertfünfzig ton
+    - zweifünfzig tonziegel
+    - zwei fünfzig tonziegel
+    - zweihundertfünfzig tonziegel
+    - ton 250
+    - 250 ton
+    - 250 tonziegel
+    - ton-250
+    - ton-250-ziegel
+    - 250-ton-ziegel
+    - 250-tonziegel
 - synonym: blechziegel
   examples: |
     - blech-ziegel
@@ -3000,36 +3041,6 @@ nlu:
     - adapberbleche
     - adapter-blech
     - Adapter-blech
-- synonym: ton250
-  examples: |
-    - ton-zweifünfzig
-    - ton-zwei-fünfzig
-    - ton-zweihundertfünfzig
-    - ton-zweifünfzig-ziegel
-    - ton-zwei-fünfzig-ziegel
-    - ton-zweihundertfünfzig-ziegel
-    - zweifünfzig-ton-ziegel
-    - zwei-fünfzig-ton-ziegel
-    - zweihundertfünfzig-ton-ziegel
-    - zweifünfzig-tonziegel
-    - zwei-fünfzig-tonziegel
-    - zweihundertfünfzig-tonziegel
-    - ton zweifünfzig
-    - ton zwei fünfzig
-    - ton zweihundertfünfzig
-    - zweifünfzig ton
-    - zwei fünfzig ton
-    - zweihundertfünfzig ton
-    - zweifünfzig tonziegel
-    - zwei fünfzig tonziegel
-    - zweihundertfünfzig tonziegel
-    - ton 250
-    - 250 ton
-    - 250 tonziegel
-    - ton-250
-    - ton-250-ziegel
-    - 250-ton-ziegel
-    - 250-tonziegel
 - synonym: photovoltaikmodul
   examples: |
     - PV-Modul
@@ -3055,6 +3066,7 @@ nlu:
     - photovoltaik-module
     - photovoltaikmodulen
     - pvmodule
+    - Solarmodule
     - solarmodulen
 - synonym: 8 mm
   examples: |
@@ -3179,12 +3191,6 @@ nlu:
 - synonym: 9745-WASICLIPM3SE
   examples: |
     - Mittelklemmen + WASICLIPS fuer Modulhoehen 36-44mm, schwarz
-- synonym: mm
-  examples: |
-    - Millimeter
-    - em em
-    - milli meter
-    - millimeter
 - synonym: cm
   examples: |
     - centimeter
