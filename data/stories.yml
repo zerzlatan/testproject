@@ -906,7 +906,7 @@ stories:
   - active_loop: simple_rail_form
   - slot_was_set:
     - requested_slot: rail_adesign
-  - intent: give_rail_info
+  - intent: give_info
     entities:
     - rail_adesign: 40er Montageschienen
     - rail_bfeature: standard
