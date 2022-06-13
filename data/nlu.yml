@@ -2916,6 +2916,7 @@ nlu:
     - wasiclip
     - Wasi Clip
     - WASI Clip
+    - was i Clip
     - wasi-clip
     - vase clip
     - wasie clip
@@ -2923,7 +2924,6 @@ nlu:
     - was clip
     - vas clip
     - vasi-clip
-    - was i Clip
     - War sie Clip
     - quasi Clip
     - war sie Clip
@@ -3002,6 +3002,7 @@ nlu:
 - synonym: ton250
   examples: |
     - Zweihundertfünfzig-tonziegel
+    - ton 250
     - ton-zweifünfzig
     - ton-zwei-fünfzig
     - ton-zweihundertfünfzig
@@ -3023,7 +3024,6 @@ nlu:
     - zweifünfzig tonziegel
     - zwei fünfzig tonziegel
     - zweihundertfünfzig tonziegel
-    - ton 250
     - 250 ton
     - 250 tonziegel
     - ton-250
@@ -3115,6 +3115,7 @@ nlu:
     - photovoltaikmodulen
     - pvmodule
     - Solarmodule
+    - PV-Module
     - solarmodulen
 - synonym: 8 mm
   examples: |
