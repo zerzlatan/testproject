@@ -314,16 +314,6 @@ rules:
   - action: simple_hook_form
   - slot_was_set:
     - requested_slot: true
-- rule: Activate simple_clamp_form whenever EK
-  condition:
-  - slot_was_set:
-    - clamp_type: endklemme
-  steps:
-  - intent: want_article
-  - action: simple_clamp_form
-  - active_loop: simple_clamp_form
-  - slot_was_set:
-    - requested_slot: true
 - rule: Interruption in simple_clamp_form
   condition:
   - active_loop: simple_clamp_form
