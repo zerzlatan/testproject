@@ -41,8 +41,6 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
-- give_color:
-    use_entities: true
 - greet:
     use_entities: true
 - nlu_fallback:
@@ -51,23 +49,9 @@ intents:
     use_entities: true
 - test_hello_world:
     use_entities: true
-- want_brick:
-    use_entities: true
-- want_brick_all_infos:
-    use_entities: true
-- specify_brick_without_quantity:
-    use_entities: true
-- want_turmbiber_no_quantity:
-    use_entities: true
-- want_brick_no_quantity_no_color:
-    use_entities: true
 - tell_time:
     use_entities: []
 - restart:
-    use_entities: true
-- want_clamp:
-    use_entities: true
-- want_wood:
     use_entities: true
 - delete_latest_position:
     use_entities: true
@@ -83,7 +67,6 @@ entities:
 - heavy_versions
 - height
 - alength
-- quantity
 - rail_adesign
 - rail_bfeature
 - rail_color
