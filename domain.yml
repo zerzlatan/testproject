@@ -43,8 +43,6 @@ intents:
     use_entities: true
 - give_color:
     use_entities: true
-- give_quantity:
-    use_entities: true
 - greet:
     use_entities: true
 - nlu_fallback:
