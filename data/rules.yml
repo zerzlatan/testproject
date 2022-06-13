@@ -317,7 +317,7 @@ rules:
 - rule: Activate simple_clamp_form whenever EK
   condition:
   - slot_was_set:
-    - clamp_type: true
+    - clamp_type: endklemme
   steps:
   - intent: want_article
   - action: simple_clamp_form
