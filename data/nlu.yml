@@ -652,6 +652,7 @@ nlu:
     - ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [36 mm](height) bestellen
     - guten Tag zusammen ich hätte gerne [mittelklemme](clamp_type) mit [war sie Clip](framed)s [40mm](height) im [Dunkel]{"entity": "rail_color", "value": "schwarz"}
     - mit [Vase Clip]{"entity": "framed", "value": "WASICLIP"}
+    - [sonderziegel](brick_type)
 - intent: want_article
   examples: |
     - ich brauche [endklemmen]{"entity": "clamp_type", "value": "endklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [40 mm](height)
@@ -1746,6 +1747,12 @@ nlu:
     - guten Tag ich möchte gerne [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} bestellen mit [Wasi]{"entity": "framed", "value": "WASICLIP"} Clip [40 mm](height) in [schwarz](rail_color)
     - ich möchte gerne [mittelklemme](clamp_type) stellen
     - wie wird gern [blechziegel](article) ergattern hier
+    - ich brauche [endklemmen]{"entity": "clamp_type", "value": "endklemme"} für [gerahmte]{"entity": "framed", "value": "gerahmt"} Module
+    - guten Tag zusammen, ich brauche [solarmodule]{"entity": "article", "value": "photovoltaikmodul"}
+    - ich möchte [blechziegel](article) bestellen und zwar [sonderziegel](brick_type)
+    - ich möchte [sonderziegel](article) bestellen
+    - ich brauche [blechziegel](article) für [Beton]{"entity": "brick_type", "value": "beton"} [17](sales_units) Stück bitte
+    - ich brauche [Solarmodule]{"entity": "article", "value": "photovoltaikmodul"} bitte [14](sales_units) an der Zahl
 - intent: give_sales_unit
   examples: |
     - [15](sales_units) Verkaufseinheiten
@@ -2224,6 +2231,10 @@ nlu:
     - [7](sales_units) Stück bitte schön
     - [222](sales_units) Stück reichen mir aus vollkommen
     - [45](sales_units) Stück bitte
+    - [12](sales_units) Uhr
+    - [17](sales_units) Stück bitte
+    - [70](sales_units)
+    - [50](sales_units) Stück bitte
 - intent: give_height
   examples: |
     - [6 mm](height) hohe [Endklemmen]{"entity": "clamp_type", "value": "endklemme"}
@@ -2305,6 +2316,8 @@ nlu:
     - [32 Millimeter](height)
     - [50 mm](height) wären ausreichend
     - [36mm](height) Wetter
+    - [42mm](height)
+    - [36mm](height) Witze
 - intent: thanks
   examples: |
     - Vielen Dank!
@@ -2365,6 +2378,7 @@ nlu:
     - danke das war's ein schönen Tag wünsche ich
     - das war es danke schön
     - danke das langt
+    - danke das war's
 - intent: stop
   examples: |
     - Stop
@@ -2410,6 +2424,7 @@ nlu:
     - Abbrechen Das möchte ich nicht
     - Stopp Stopp Stopp
     - Stopp Stopp
+    - keinen Bock mehr
 - intent: generate_final_task
   examples: |
     - Erstelle das Angebot
