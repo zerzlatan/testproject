@@ -81,6 +81,7 @@ nlu:
     - Guten Tag zusammen!
     - Guten Abend zusammen
     - servus
+    - Hallo zusammen
 - intent: goodbye
   examples: |
     - cu
@@ -228,6 +229,7 @@ nlu:
     - ja stop
     - ja ich bin mir sicher
     - ja ja
+    - aber [sowas](sales_units) von sicher ja
 - intent: deny
   examples: |
     - no
@@ -647,6 +649,9 @@ nlu:
     - füge rannte Module bitte für [gerahmte]{"entity": "framed", "value": "gerahmt"} Module
     - [30](sales_units) bitte
     - [ton 250]{"entity": "brick_type", "value": "ton250"} bitte
+    - ich möchte [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [36 mm](height) bestellen
+    - guten Tag zusammen ich hätte gerne [mittelklemme](clamp_type) mit [war sie Clip](framed)s [40mm](height) im [Dunkel]{"entity": "rail_color", "value": "schwarz"}
+    - mit [Vase Clip]{"entity": "framed", "value": "WASICLIP"}
 - intent: want_article
   examples: |
     - ich brauche [endklemmen]{"entity": "clamp_type", "value": "endklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [40 mm](height)
@@ -1738,6 +1743,9 @@ nlu:
     - ich möchte [was](clamp_type) bestellen
     - ich möchte [blechziegel](article) erstellen
     - ich hätte gerne [M10](ascrew_type) [Adapter Bleche](article)
+    - guten Tag ich möchte gerne [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} bestellen mit [Wasi]{"entity": "framed", "value": "WASICLIP"} Clip [40 mm](height) in [schwarz](rail_color)
+    - ich möchte gerne [mittelklemme](clamp_type) stellen
+    - wie wird gern [blechziegel](article) ergattern hier
 - intent: give_sales_unit
   examples: |
     - [15](sales_units) Verkaufseinheiten
@@ -2213,6 +2221,9 @@ nlu:
     - [14](sales_units) Stück
     - [33](sales_units) Stück sollten ausreichen
     - [7](sales_units) Uhr
+    - [7](sales_units) Stück bitte schön
+    - [222](sales_units) Stück reichen mir aus vollkommen
+    - [45](sales_units) Stück bitte
 - intent: give_height
   examples: |
     - [6 mm](height) hohe [Endklemmen]{"entity": "clamp_type", "value": "endklemme"}
@@ -2352,6 +2363,8 @@ nlu:
     - Das war s Danke schön
     - Danke Das war's
     - danke das war's ein schönen Tag wünsche ich
+    - das war es danke schön
+    - danke das langt
 - intent: stop
   examples: |
     - Stop
