@@ -653,6 +653,9 @@ nlu:
     - guten Tag zusammen ich hätte gerne [mittelklemme](clamp_type) mit [war sie Clip](framed)s [40mm](height) im [Dunkel]{"entity": "rail_color", "value": "schwarz"}
     - mit [Vase Clip]{"entity": "framed", "value": "WASICLIP"}
     - [sonderziegel](brick_type)
+    - [25cm]{"entity": "alength", "value": "250 mm"}
+    - ich meinte [40 mm](height) und [schwarz](rail_color)
+    - [50 mm](height) und bitte 120
 - intent: want_article
   examples: |
     - ich brauche [endklemmen]{"entity": "clamp_type", "value": "endklemme"} mit [wasiclip]{"entity": "framed", "value": "WASICLIP"} für [40 mm](height)
@@ -1753,6 +1756,12 @@ nlu:
     - ich möchte [sonderziegel](article) bestellen
     - ich brauche [blechziegel](article) für [Beton]{"entity": "brick_type", "value": "beton"} [17](sales_units) Stück bitte
     - ich brauche [Solarmodule]{"entity": "article", "value": "photovoltaikmodul"} bitte [14](sales_units) an der Zahl
+    - ich benötige noch [Adapter Bleche]{"entity": "article", "value": "adapterblech"} für [M10](ascrew_type) schrauben
+    - ich brauche dann noch [blechziegel](article) für [Beton]{"entity": "brick_type", "value": "beton"} [50](sales_units) Stück
+    - ich brauche [schwarze]{"entity": "rail_color", "value": "schwarz"} [schienen]{"entity": "article", "value": "schiene"} bitte
+    - ich mache [endklemmen]{"entity": "clamp_type", "value": "endklemme"}
+    - ich möchte noch [mittelklemmen]{"entity": "clamp_type", "value": "mittelklemme"} mit [Wasi Clip]{"entity": "framed", "value": "WASICLIP"} bestellen
+    - ich möchte [Solarmodule]{"entity": "article", "value": "photovoltaikmodul"} bestellen
 - intent: give_sales_unit
   examples: |
     - [15](sales_units) Verkaufseinheiten
@@ -2235,6 +2244,11 @@ nlu:
     - [17](sales_units) Stück bitte
     - [70](sales_units)
     - [50](sales_units) Stück bitte
+    - [80](sales_units) Stück
+    - [70](sales_units) Stück
+    - [22](sales_units) Stück
+    - [120](sales_units) Stück
+    - [32](sales_units) Stück bitte
 - intent: give_height
   examples: |
     - [6 mm](height) hohe [Endklemmen]{"entity": "clamp_type", "value": "endklemme"}
@@ -2538,6 +2552,7 @@ nlu:
     - Danke schön Ich möchte jetzt noch als Nächstes bitte dass du mir die Rechnung als pdf erstellt
     - Er stelle die Rechnung in PDF Form für mich bitte
     - Stelle meine PDF Bitte
+    - erzeuge die meine Rechnung im PDF
 - intent: give_clamp_id
   examples: |
     - [9742-WASI4-30](w_clamp_id)
