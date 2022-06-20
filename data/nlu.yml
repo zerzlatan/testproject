@@ -2875,6 +2875,7 @@ nlu:
     - schwarze
     - dunkle
     - dunkel
+    - Dunkel
     - schwarzer
     - black
     - schwarzen
@@ -2945,6 +2946,7 @@ nlu:
     - Wasi Clip
     - WASI Clip
     - was i Clip
+    - Vase Clip
     - wasi-clip
     - vase clip
     - wasie clip
