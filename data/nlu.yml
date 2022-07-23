@@ -2922,9 +2922,9 @@ nlu:
     - 25 centimeter
     - 25 Zentimeter
     - 25 Centimeter
+    - 25cm
     - 250 Millimeter
     - 250 millimeter
-    - 25cm
     - 25-cm
     - 25-centimeter
     - 25centimeter
@@ -3132,8 +3132,8 @@ nlu:
     - adapter-bleche
     - adapberbleche
     - adapter-blech
-    - Adapter-blech
     - Adapter Bleche
+    - Adapter-blech
 - synonym: photovoltaikmodul
   examples: |
     - PV-Modul
